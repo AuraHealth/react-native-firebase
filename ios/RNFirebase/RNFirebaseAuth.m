@@ -581,15 +581,6 @@ RCT_EXPORT_METHOD(reauthenticate:(NSString *)provider authToken:(NSString *)auth
         case FIRAuthErrorCodeExpiredActionCode:
             code = @"auth/expired-action-code";
             break;
-        case FIRAuthErrorCodeInvalidMessagePayload:
-            code = @"auth/invalid-message-payload";
-            break;
-        case FIRAuthErrorCodeInvalidSender:
-            code = @"auth/invalid-sender";
-            break;
-        case FIRAuthErrorCodeInvalidRecipientEmail:
-            code = @"auth/invalid-recipient-email";
-            break;
         case FIRAuthErrorCodeKeychainError:
             code = @"auth/keychain-error";
             break;
